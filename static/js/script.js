@@ -1,10 +1,11 @@
-let inputNome = document.querySelector('#nome')
-let inputEmail = document.querySelector('#email')
+  
+let inputNome = document.querySelector('#nome') 
+let inputEmail = document.querySelector('#email') 
 let textareaMensagem = document.querySelector('#mensagem') 
-let btnEnviar = document.querySelector('#enviar')
-let nomeOk = false
-let emailOk = false
-let msgOk = false
+let btnEnviar = document.querySelector('#enviar') 
+let nomeOk = false 
+let emailOk = false 
+let msgOk = false 
 btnEnviar.disabled = true 
 
 inputNome.addEventListener('keydown', () => { 
@@ -12,7 +13,7 @@ inputNome.addEventListener('keydown', () => {
       inputNome.style.borderColor = 'red' 
       nomeOk = false
    } else {
-      inputNome.style.borderColor = 'green'
+      inputNome.style.borderColor = 'green' 
       nomeOk = true
    }
 
@@ -20,50 +21,57 @@ inputNome.addEventListener('keydown', () => {
       inputNome.style.borderColor = '#ccc'
    }
 
+   
    if (nomeOk && emailOk && msgOk) {
       btnEnviar.disabled = false
-   } else {
+   } else { 
       btnEnviar.disabled = true
    }
 
 })
+
 
 
 inputEmail.addEventListener('keyup', () => {
-   if(inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf('.com') == -1){
+   
+   if(inputEmail.value.indexOf('@') == -1 || inputEmail.value.indexOf('.') == -1){
       inputEmail.style.borderColor = 'red' 
       emailOk = false
    } else {
-      inputEmail.style.borderColor = 'green'
+      inputEmail.style.borderColor = 'green' 
       emailOk = true
    }  
 
-
+  
    if (nomeOk && emailOk && msgOk) {
       btnEnviar.disabled = false
-   } else {
+   } else { 
       btnEnviar.disabled = true
    }
 })
 
+
 textareaMensagem.addEventListener('keyup', ()=>{
+   
    if(textareaMensagem.value.length > 100){
       textareaMensagem.style.borderColor = 'red' 
       msgOk = false
    } else {
-      textareaMensagem.style.borderColor = 'green'
+      textareaMensagem.style.borderColor = 'green' 
       msgOk = true
    }
 
+   
    if (nomeOk && emailOk && msgOk) {
       btnEnviar.disabled = false
-   } else {
+   } else { 
       btnEnviar.disabled = true
    }
 })
 
 
 btnEnviar.addEventListener('click', () => {
+   
    let carregamento = document.querySelector('#carregamento')
    carregamento.style.display = 'flex'
 
