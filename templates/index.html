@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-3">
+   <link rel="stylesheet" href="../static/css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <title>Portfólio</title>
+</head>
+
+<body>
+
+   <nav>
+      <ul>
+         <li> <a href="#introducao">Início</a> </li>
+         <li> <a href="#sobre">Sobre Mim</a> </li>
+         <li> <a href="#projetos">Projetos</a> </li>
+         <li> <a href="#habilidades">Habilidades</a> </li>
+         <li> <a href="#habilidades">Contato</a> </li>
+      </ul>
+   </nav>
+
+   <header id='introducao'>
+      <div>
+          <h2>Developer Student and Curious</h2>
+          <p>Fellipe Leal</p>
+          <a href="#comeco"><button>Saiba Mais</button></a>
+      </div>
+   </header>
+
+   <section id="comeco">
+      <div id="comeco-text">
+         <p>"Não odeie seus inimigos. O ódio atrapalha o raciocínio. Eu converso com meus inimigos e, às vezes, até os respeito, mas isso não quer dizer que eu confie neles."</p>
+         <span>Don Vito Corleone</span>
+      </div>
+
+      <div id="img">
+         <img src="../static/img/dvc.svg" alt="Don Vito Corleone">
+      </div>
+   </section>
+
+   <section id="sobre">
+      <div id="img-perfil">
+         <img src="../static/img/eu.jpeg" alt="Imagem de perfil">
+      </div>
+
+      <div id="texto-sobre">
+         <p>
+            Me chamo Fellipe Leal, tenho 20 anos e sou da Bahia. Atualmente trabalho na Aviação Civil, porém gosto muito das tecnologias e suas aplicabilidades no mundo, além da suar parte de Software quanto da parte de Hardware.
+         </p>
+      </div>
+   </section>
+
+
+   <section id="projetos">
+
+      <div>
+         <img src="../static/img/01.jpg" alt="img-lorem">
+         <h2>A Ultima Sentelha do Universo</h2>
+         <p>Projeto de jogo RPG Interativo feito em Python, jogo com uma história em que se passa no futuro, tenho objetivo descobrir o motivo do fim do mundo.</p>
+         <a href="https://github.com/flealbrl/t3c5-m1/blob/main/ProjetoFinalizado.py" target="__blank"><button>Veja mais</button></a>
+      </div>
+
+      <div>
+         <img src="../static/img/02.png" alt="img-lorem">
+         <h2>Jogo do Humor Zeca Pagodinho </h2>
+         <p>Projeto página de troca de humor do personagem Zeca Pagodinho, no qual ao clicar no botao o usuário terá surpresas.</p>
+         <a href="https://flealbrl.github.io/ProjectHumor/" target="__blank"><button>Veja mais</button></a>
+      </div>
+
+      <div>
+         <img src="../static/img/03.jpg" alt="img-lorem">
+         <h2>Jogo do Jokenpó</h2>
+         <p>Projeto de jogo feito em Pyton no qual você conseguir jogar o Jokenpó com o computador, escolhendo quantas rodadas, e entre outros.</p>
+         <a href="https://github.com/flealbrl/Blue_T3C5_mod1/blob/main/ProjetoJokenpo.ipynb" target="__blank"><button>Veja mais</button></a>
+      </div> 
+
+   </section>
+
+
+   <section id="habilidades">
+
+      <h2>Habilidades Técnicas</h2>
+
+      <p>HTML 5</p>
+      <div>
+         <span id="html5">60%</span>
+      </div>
+
+      <p>CSS 3</p>
+      <div>
+         <span id="css3">60%</span>
+      </div>
+
+      <p>JavaScript</p>
+      <div>
+         <span id="js">30%</span>
+      </div>
+
+      <p>Python</p>
+      <div>
+         <span id="python">80%</span>
+      </div>
+
+      <p>Flask</p>
+      <div>
+         <span id="flask">20%</span>
+      </div>
+   </section>
+
+   <section id="contato">
+
+      <div id="redes">
+         <h3>Se conecte comigo </h3>
+         <a href="https://github.com/flealbrl" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+         </a>
+
+         <a href="https://www.instagram.com/fellipe.le/" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+         </a>
+
+         <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         </a>
+      </div>
+
+      <h3>Mande uma mensagem</h3>
+
+      <form action='/send' method="POST">
+         <label for="nome">Nome</label>
+         <input type="text" placeholder="Digite seu Nome" id="nome" name="nome">
+
+         <label for="email">E-mail</label>
+         <input type="email" placeholder="Digite seu melhor e-mail" id="email" name="email">
+
+
+         <label for="mensagem">Mensagem</label>
+         <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+         <button type="submit" id="enviar">Enviar</button>
+
+      </form>
+
+      <div id="carregamento">
+         <p>Enviando mensagem</p>
+         <div id="loader"></div>
+      </div>
+      
+
+   </section>
+
+   <footer>
+      <p>Leal Code /> </p>
+   </footer>
+
+
+   <script src='../static/js/script.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+header#introducao div p{
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+header#introducao{
+  background: url(../img/bg.png);
+  animation: zoom 5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem;
+}
+
+@keyframes zoom{
+   0%{
+      transform: scale(1.1);
+   }
+   100%{
+      transform: scale(1);
+   }
+}
+
+
+header#introducao div{
+   color: #ffffff;
+   margin: 7rem;
+}
+
+header#introducao div h2{
+   color: #ffffff;
+   font-size: 7rem;
+   margin-bottom: 3rem;
+
+}
+
+header#introducao div p{
+   font-size: 3rem;
+   margin-left: 1rem;
+   margin-bottom: 3rem;
+}
+
+header#introducao div button{
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   letter-spacing: .1rem;  
+   background: #6a3093;
+   background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+   background: linear-gradient(to right, #a044ff, #6a3093);
+   font-size: medium;
+   padding: 1rem 3rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: .4s ease-out;
+}
+
+header#introducao div button:hover{
+   background-color: rgb(100, 5, 76);
+   color: rgb(0, 0, 0);
+   transform: scale(1.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+nav {
+  background-color: #000000da;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s ease-in-out;
+}
+
+nav ul li:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ff00ee50;
+  
+}
+
+section#comeco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+section#comeco div#img {
+  display: flex;
+  justify-content: center;
+}
+
+section#comeco div img {
+  width: 180%;
+}
+
+section#comeco div p {
+  font-size: 2vw;
+  font-weight: 700;
+  color: #000000;
+}
+
+section#comeco div span {
+  color: #8b0000;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+section#comeco div#comeco-text {
+  padding: 7rem;
+}
+
+section#sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+}
+section#sobre div {
+  margin: 6rem;    
+}
+
+section#sobre div img{
+  width: 200%;
+  border-radius: 50%;
+}
+
+section#sobre div p{
+  font-size: 1.1vw;
+  text-align: justify;
+  color: #fff;
+  line-height: 2.5rem;
+}
+
+section#projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+section#projetos div {
+  padding: 2rem;
+  margin: 0 1rem 0 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+section#projetos div p {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+}
+
+section#projetos div h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+section#projetos div img {
+  display: block;
+  margin: auto;
+}
+section#projetos div a{
+  text-decoration: none;
+}
+
+section#projetos div button {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: .1rem;  
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  font-size: medium;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .4s ease-out;
+}
+
+section#projetos div button:hover {
+  background-color: rgb(100, 5, 76);
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+
+section#habilidades {
+  padding: 5rem 10rem 3rem 10rem;
+  background-color: #cccccc;
+}
+
+section#habilidades h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+section#habilidades p {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+section#habilidades div {
+  display: flex;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+}
+
+section#habilidades span#html5 {
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: .3rem;
+  border-radius: 1rem;
+  width: 60%;
+}
+
+section#habilidades span#css3 {
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: .3rem;
+  border-radius: 1rem;
+  width: 60%;
+}
+
+section#habilidades span#js {
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: .3rem;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+section#habilidades span#python {
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: .3rem;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+section#habilidades span#flask {
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: .3rem;
+  border-radius: 1rem;
+  width: 20%;
+}
+
+
+section#contato {
+  padding: 3rem 10rem 3rem 10rem;
+  display: grid;
+  place-items: center;
+  background: url(../img/gif.gif);
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+section#contato h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+section#contato form {
+  width: 50%;
+}
+
+section#contato form input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+section#contato form label {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+section#contato form button {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: .1rem;  
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right #a044ff, #6a3093);
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  font-size: medium;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .4s ease-out;
+}
+
+section#contato form button:disabled {
+  border: .5px solid rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255);
+  color: rgb(170, 170, 170);
+}
+
+section#contato form button:hover:disabled {
+  border: .5px solid rgb(170, 170, 170);
+  background-color: rgb(255, 255, 255);
+  color: rgb(170, 170, 170);
+}
+
+section#contato form button:hover {
+  background-color: #c0a300;
+  color: #fff;
+}
+
+section#contato div#redes a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+section#contato div#redes a:hover {
+  color: #9000ad;
+  transition: 0.3s ease-in-out;
+}
+
+section#contato div#redes {
+  margin-bottom: 2rem;
+}
+
+section#contato h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+section#contato div#carregamento{
+  display: none; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+section#contato div#carregamento p{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+section#contato div#carregamento div#loader{
+  border: 13px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  border-top: 13px solid #940094;
+  border-bottom: 13px solid #940094;
+  width: 80px;
+  height: 80px;
+  animation: spin 5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); 
+  } 
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+footer{
+  text-align: center;
+  background-color: #000000;
+  padding: .5rem;
+}
+footer p{
+  color: #ffffff;
+  font-size: medium;
+}
+
+body#send{
+  background: url(../img/gif-send.gif);
+  background-size: cover;
+  
+}
+
+body#send section#success{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+body#send section#success div#card{
+  margin-top: 15rem;
+  margin-left: 5rem;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: center;
+  padding: 5rem;
+  border-radius: 2rem;
+  color: rgb(3, 122, 3);
+  width: 40%;
+}
+
+body#send section#success div#card h1{
+  margin: 2rem 0rem;
+}
+
+body#send section#success div#card i{
+  font-size: 5rem;
+}
+
+body#send section#success div#card h3{
+  margin-bottom: 2rem;
+}
+
+body#send section#success div#card p{
+  margin-bottom: 3rem;
+  width: 100%;
+  word-break: break-word;
+}
+
+body#send section#success div#card a{
+  text-decoration: none;
+  padding: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+  background: -webkit-linear-gradient(to right #06b106, #048d04);
+  background: linear-gradient(to right, #06b106, #048d04);
+  border-radius: .4rem;
+  transition: all .4s ease-out;
+}
+
+body#send section#success div#card a:hover{
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
