@@ -431,7 +431,6 @@ footer p{
 body#send{
   background: url(../img/gif-send.gif);
   background-size: cover;
-  
 }
 
 body#send section#success{
@@ -440,7 +439,6 @@ body#send section#success{
   text-align: center;
   align-items: center;
   height: 100%;
-  
 }
 
 body#send section#success div#card{
